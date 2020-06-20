@@ -14,7 +14,7 @@
         <h4>
             <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
         </h4>
-        {{ post.body|markdown|truncatechars_html:5 }}
+        {{ post.body|markdown|truncatechars_html:50 }}
     {% empty %}
         <p>There is no results for "{{ query }}"</p>
     {% endfor %}
